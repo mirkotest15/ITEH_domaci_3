@@ -1,9 +1,10 @@
-import React from 'react';
-import { useState } from '../boje';
+import React, { useState } from 'react';
+import { getBoja } from '../boje';
 import Broj from '../components/Broj';
 
-export default function Igra({ pokusjai, dodajPokusaj }){
-  const [ulog, setUlog] = setState(0);
+
+export default function Igra({ pokusaji, dodajPokusaj }) {
+  const [ulog, setUlog] = useState(0);
   const [boja, setBoja] = useState('black');
   const [dobitak, setDobitak] = useState(undefined);
   return (
@@ -73,5 +74,4 @@ export default function Igra({ pokusjai, dodajPokusaj }){
     </div>
   );
 }
-
 
